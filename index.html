@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>NASA Picture of the Day in History</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body> 
+		<header>
+			<h1>Search NASA's Image and Video Library</h1>
+			<input id="search" type="text" name="" value="">
+			<button class="get-pic" type="button" name="button">Go!</button>
+		</header>
+		
+<!--
+		<h2>Name</h2>
+		<img src="" alt="">
+		<video src="" autoplay controls>
+
+		</video>
+		<h3>Description</h3> -->
+
+		<section class="card-container">
+			<ul class="pagination"></ul>
+			<span id="page-results-range"></span>
+			<ul id="cards" class="cards"></ul>
+		</section>
+
+		<article class="overlay hidden">
+			<div class="close">x</div>
+			<h2></h2>
+			<div class="media"></div>
+			<span class="date-created"></span>
+			<p class="description"></p>
+		</article>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

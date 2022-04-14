@@ -1,0 +1,130 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+header {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:visited {
+  color: blue;
+}
+
+article {
+  width: 70vw;
+  position: absolute;
+  top: 8vh;
+  left: 15vw;
+  background: lightblue;
+  border-radius: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 0 2em 2em 2em;
+}
+
+video {
+  max-width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+}
+
+.pagination li {
+  margin-inline: 1em;
+}
+
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.card {
+  border: 2px solid red;
+  flex-direction: column;
+  width: 15rem;
+  min-height: 18rem;
+  max-height: 20rem;
+  border-radius: 5px;
+}
+
+.card,
+.close {
+  cursor: pointer;
+}
+
+.close {
+  font-size: 2em;
+  margin-left: 95%;
+  margin-top: 2.5%;
+}
+
+.card > span {
+  display: block;
+}
+
+.thumbnail,
+.media > * {
+  margin: 1rem auto;
+  max-height: 60%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.card-title {
+  text-align: center;
+}
+
+@supports (aspect-ratio: 1) {
+  .card {
+    aspect-ratio: 1;
+  }
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
